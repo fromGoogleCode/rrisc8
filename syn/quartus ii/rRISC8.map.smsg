@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at gpio.v(57): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at navre.v(191): object "DMEM_A_SEL_REG" differs only in case from object "dmem_a_sel_reg" in the same scope
+Info (10281): Verilog HDL Declaration information at navre.v(321): object "writeback" differs only in case from object "WRITEBACK" in the same scope

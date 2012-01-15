@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jan 15 17:23:27 2012
+Quartus II Version : 11.0 Build 208 07/03/2011 SP 1 SJ Full Version
+Revision Name : rRISC8
+Top-level Entity Name : rRISC8
+Family : Cyclone IV E
+Total logic elements : 3,008
+    Total combinational functions : 2,677
+    Dedicated logic registers : 894
+Total registers : 894
+Total pins : 29
+Total virtual pins : 0
+Total memory bits : 40,960
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

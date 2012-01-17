@@ -665,6 +665,7 @@ always @(*) begin
 end
 
 
+
 wire [pmem_width-1:0] PC_inc = PC + {{pmem_width-1{1'b0}}, 1'b1};
 always @(*) begin
 	case(dmem_sel)
@@ -740,6 +741,7 @@ localparam WRITEBACK	= 4'd12;
 localparam SBI          = 4'd13; /* SBIC SBIS added 2011-11-03 */ 
 localparam IRQ1         = 4'd14;
 localparam IRQ2         = 4'd15;
+
 
 
 always @(posedge clk) begin
@@ -832,7 +834,7 @@ always @(*) begin
                  /* All LD ST instrcution address selection decode modified 2011-11-05 */
 				16'b1001_00xx_xxxx_1100, /*  X   */
 				16'b1001_00xx_xxxx_1101, /*  X+  */
-				16'b1001_00xx_xxxx_1110, /* -X   */ 
+				16'b1001_00xx_xxxx_1110, /* -X   */
 				16'b1001_00xx_xxxx_1001, /*  Y+  */
 				16'b1001_00xx_xxxx_1010, /* -Y   */
 				16'b10x0_xxxx_xxxx_1xxx, /*  Y+q */
@@ -1111,6 +1113,9 @@ begin
     else if(irq_start)
         irqackad <= irq_vector_addr;
 end
+
+
+
 
 
 

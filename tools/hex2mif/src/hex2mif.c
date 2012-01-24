@@ -149,4 +149,6 @@ void main(int argc,char *argv[])
 	fclose(fpo) ;
 
 	printf("Filename:%s.\tROM Size:%sKByte.\n", argv[2], (argc == 3 ? "2" : argv[3])); /* Add 11-04 */
+	
+	exit(0);
 }
